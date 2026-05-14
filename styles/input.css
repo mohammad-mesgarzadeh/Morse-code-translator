@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+body {
+    font-family: 'DOS-like', 'Courier New', Courier, monospace;
+}
+
+.command-prompt::before {
+    content: "> ";
+    color: #00ff00;
+    animation: blink 1s step-end infinite;
+    margin-left: 8px;
+    display: inline-block;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0;
+    }
+}
